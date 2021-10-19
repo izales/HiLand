@@ -9,15 +9,10 @@ interface ILayoutProps {
 
 const Layout = ({ children }: ILayoutProps): JSX.Element => {
   return (
-    <>
-      <main>{children}</main>
-      <Footer>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsum
-        libero doloremque eaque atque iusto temporibus sit repellat eum
-        provident. Amet inventore voluptate libero itaque quasi cumque accusamus
-        suscipit esse.
-      </Footer>
-    </>
+     <div className="mb-cloud  w-screen h-screen ">  
+  <div>{children}</div>
+  
+  </div>
   )
 }
 
