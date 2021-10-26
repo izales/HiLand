@@ -47,7 +47,7 @@ const Landscape = (): JSX.Element => {
   
   <StaticImage
         src="../../images/landscape.png"
-        width={1800}  
+        width={2400}  
         quality={95}
         formats={["auto", "png"]}
         alt="wolke"
