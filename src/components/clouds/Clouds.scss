@@ -1,0 +1,32 @@
+.mb-cloud {  
+    position: relative;
+    overflow: hidden;  
+    background: linear-gradient(#87CEEB,#E0FFFF);  
+}  
+
+
+
+.animation{
+    animation: cloud1 13s infinite linear;  
+}
+.animation-slow{
+    animation: cloud2 20s infinite linear;  
+}
+.animation-slow-2{
+    animation: cloud3 15s infinite linear;  
+}
+
+
+@keyframes cloud1 {  
+    from{transform: translate3d(-1170px,0,0)}  
+    to{transform: translate3d(1800px,0,0)}  
+}  
+@keyframes cloud2 {  
+    from{transform: translate3d(-900px,0,0)}  
+    to{transform: translate3d(1800px,0,0)}  
+} 
+
+@keyframes cloud3 {  
+    from{transform: translate3d(-900px,0,0)}  
+    to{transform: translate3d(1800px,0,0)}  
+} 

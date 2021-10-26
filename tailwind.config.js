@@ -30,10 +30,18 @@ module.exports = {
         2: "0 50%",
       },
       colors: {
-        1: "#C4C4C4",
+        1: "#398E7F",
         2: "#ffffff",
         3: "#b2b2b2",
+        'button': '#EE5858',
+        'blue': '#CBF0FF'
       },
+      margin: {
+        'xs': '2rem',
+        's': '4rem',
+        'm': '6rem',
+        'l': '8rem'
+            },
       height: {
         "25vh": "25vh",
         "50vh": "50vh",
