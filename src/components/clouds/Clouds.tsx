@@ -2,7 +2,7 @@ import React, { ReactNode } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Img from "gatsby-image"
 import "./Clouds.scss"
-import gif from "../../images/giphy.gif"
+
 
 const Clouds = (): JSX.Element => {
   return (
@@ -74,7 +74,7 @@ const Clouds = (): JSX.Element => {
         className=" z-10 animation-slow-2 m-xl"
       />
  
- <StaticImage
+      <StaticImage
         src="../../images/vogel.png"
         width={70}  
         quality={95}
@@ -86,7 +86,7 @@ const Clouds = (): JSX.Element => {
 
 
 
-<Img    className=" z-10 animation-slow m-l" src={gif} alt="Otter dancing with a fish" />
+     
   </div>
   )
 }
