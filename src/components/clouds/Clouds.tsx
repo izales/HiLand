@@ -7,7 +7,7 @@ import "./Clouds.scss"
 const Clouds = (): JSX.Element => {
   return (
   <div className="  ">  
-  
+  komischs
   <StaticImage
         src="../images/wolke.png"
         width={200}
@@ -15,7 +15,7 @@ const Clouds = (): JSX.Element => {
         formats={["auto", "png"]}
         alt="wolke"
         
-        className="m-s z-10 animation"
+        className=" z-10 animation"
       />
  
      

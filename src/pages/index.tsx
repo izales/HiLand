@@ -35,9 +35,9 @@ const IndexPage = ({
 }: IIndexProps): JSX.Element => {
   return (
     <Layout>
+      <Clouds></Clouds>
      
-     
-       <Clouds></Clouds>
+      
       <p>
        
       </p>
