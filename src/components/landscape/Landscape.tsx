@@ -6,8 +6,9 @@ import Land from "../../assets/wiese.svg"
 
 const Landscape = (): JSX.Element => {
   return (
+       /**   
   <div className="absolute bottom-0 w-full ">  
-        <StaticImage
+      <StaticImage
         src="../../images/blumen.png"
         width={1800}  
         quality={95}
@@ -27,7 +28,7 @@ const Landscape = (): JSX.Element => {
         
         className=" z-10  relative top-72 "
       />
- 
+  
       <StaticImage
         src="../../images/wiese-dunkel-ps.png"
         width={1800}  
@@ -36,11 +37,23 @@ const Landscape = (): JSX.Element => {
         alt="wolke"
         
         className="z-10 "
-      />
-  
+      /> 
+
  
 
      
+  </div>*/
+  <div className="absolute bottom-0 w-full ">  
+  
+  <StaticImage
+        src="../../images/landscape.png"
+        width={1800}  
+        quality={95}
+        formats={["auto", "png"]}
+        alt="wolke"
+        
+        className="z-10 "
+      /> 
   </div>
   )
 }
