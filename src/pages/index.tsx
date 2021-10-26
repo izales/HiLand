@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout/Layout"
 import Seo from "../components/seo/Seo"
 import Clouds from "@components/clouds/Clouds"
+import Landscape from "@components/landscape/Landscape"
 
 
 interface ISiteDataProps {
@@ -37,7 +38,7 @@ const IndexPage = ({
     <Layout>
       <Clouds></Clouds>
      
-      
+      <Landscape></Landscape>
       <p>
        
       </p>

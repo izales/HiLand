@@ -42,6 +42,9 @@ module.exports = {
         'm': '6rem',
         'l': '8rem'
             },
+      top: {
+        'wiese': '32rem',
+      },
       height: {
         "25vh": "25vh",
         "50vh": "50vh",
