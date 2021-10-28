@@ -6,7 +6,8 @@ import Layout from "../components/layout/Layout"
 import Seo from "../components/seo/Seo"
 import Clouds from "@components/clouds/Clouds"
 import Landscape from "@components/landscape/Landscape"
-
+import AddTree from "@components/addTree/AddTree"
+import Footer from "@components/footer/Footer"
 
 interface ISiteDataProps {
   frontmatter: IFrontmatterProps
@@ -35,13 +36,15 @@ const IndexPage = ({
   },
 }: IIndexProps): JSX.Element => {
   return (
+    
     <Layout>
       <Clouds></Clouds>
-     
+      <AddTree></AddTree>
       <Landscape></Landscape>
       <p>
        
       </p>
+      
     </Layout>
   )
 }
