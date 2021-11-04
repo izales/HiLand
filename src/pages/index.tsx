@@ -39,7 +39,7 @@ const IndexPage = ({
     
     <Layout>
       <Clouds></Clouds>
-      <AddTree></AddTree>
+      <AddTree cartItems="" lastItem="" ></AddTree>
       <Landscape></Landscape>
       <p>
        
