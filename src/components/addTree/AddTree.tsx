@@ -42,7 +42,7 @@ const AddTree = ({ cartItems, lastItem,  }: IState) => {
         <button className="snipcart-add-item "
           data-item-id="tree"
           data-item-price="49.99"
-          data-item-url="/paintings/starry-night"
+          data-item-url="hiland.netlify.app"
           data-item-description="new tree safe the world"
           data-item-image="../../images/Baum_1.png"
           data-item-name="Baum">add Tree</button>
