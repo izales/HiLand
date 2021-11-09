@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Dennis Piotrowski",
   "dependencies": {
+    "axios": "^0.24.0",
     "eslint-webpack-plugin": "^3.0.1",
     "gatsby": "^3.13.0",
     "gatsby-image": "^3.11.0",
