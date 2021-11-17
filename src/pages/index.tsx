@@ -44,7 +44,7 @@ const IndexPage = ({
     </Helmet>
       <Layout>
         <Clouds></Clouds>
-        <AddTree cartItems="" lastItem=""></AddTree>
+        <AddTree Snipcart ></AddTree>
         <Landscape></Landscape>
         <p>
 
