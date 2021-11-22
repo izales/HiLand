@@ -23,6 +23,7 @@ module.exports = {
     },
     extend: {
       fontSize: {
+        "64": "64px",
         "10xl": "15rem",
         "11xl": "25rem",
       },
@@ -30,18 +31,22 @@ module.exports = {
         2: "0 50%",
       },
       colors: {
+        blue: {
+          'hell': '#CBF0FF',
+          'dunkel': '#205E8A'
+        },
         1: "#398E7F",
         2: "#ffffff",
         3: "#b2b2b2",
         'button': '#EE5858',
-        'blue': '#CBF0FF'
+
       },
       margin: {
         'xs': '2rem',
         's': '4rem',
         'm': '6rem',
         'l': '8rem'
-            },
+      },
       top: {
         'wiese': '32rem',
       },

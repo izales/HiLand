@@ -3093,7 +3093,7 @@ var plugins = [{
   options: {
     "plugins": [],
     "apiKey": "MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx",
-    "autopop": "false",
+    "autopop": false,
     "js": "https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js",
     "styles": "https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"
   }
@@ -38911,24 +38911,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!*********************************************************************************************!*\
-  !*** external "/Users/iliaszales/Documents/GitHub/HiLand/node_modules/react-dom/server.js" ***!
-  \*********************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** external "/Users/macpro/Documents/GitHub/HiLand/node_modules/react-dom/server.js" ***!
+  \*****************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/iliaszales/Documents/GitHub/HiLand/node_modules/react-dom/server.js");
+module.exports = require("/Users/macpro/Documents/GitHub/HiLand/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!****************************************************************************************!*\
-  !*** external "/Users/iliaszales/Documents/GitHub/HiLand/node_modules/react/index.js" ***!
-  \****************************************************************************************/
+/*!************************************************************************************!*\
+  !*** external "/Users/macpro/Documents/GitHub/HiLand/node_modules/react/index.js" ***!
+  \************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/iliaszales/Documents/GitHub/HiLand/node_modules/react/index.js");
+module.exports = require("/Users/macpro/Documents/GitHub/HiLand/node_modules/react/index.js");
 
 /***/ }),
 
