@@ -49,6 +49,7 @@ const AddTree = ({   }: IState) => {
     
       <div className="addTree-main-div">
     
+        <div className="flex justify-center ">
         <button className="snipcart-add-item "
           data-item-id="tree"
           data-item-price="49.99"
@@ -57,7 +58,17 @@ const AddTree = ({   }: IState) => {
           data-item-image="../../images/Baum_1.png"
           data-item-quantity-step="-1"
 
-          data-item-name="Baum">remove Tree</button>
+          data-item-name="Baum">
+            <StaticImage
+          src="../../assets/minus.svg"
+          width={50}  
+          quality={95}
+          
+          alt="plus"
+          
+          className=" "
+          ></StaticImage></button>
+
     <span className="snipcart-items-count"></span>
     <button className="snipcart-add-item "
           data-item-id="tree"
@@ -66,11 +77,19 @@ const AddTree = ({   }: IState) => {
           data-item-description="new tree safe the world"
           data-item-image="../../images/Baum_1.png"
           data-item-quantity-step="1"
-          data-item-name="Baum">add Tree</button>
+          data-item-name="Baum"> <StaticImage
+          src="../../assets/plus.svg"
+          width={50}  
+          quality={95}
+          
+          alt="plus"
+          
+          className=" "
+          ></StaticImage></button>
 
 
-
-      <div className="counter"> </div>
+        </div>
+      
      
 
         <section className=" flex justify-center ">
