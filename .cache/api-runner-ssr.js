@@ -9,7 +9,7 @@ var plugins = [{
     },{
       name: 'gatsby-plugin-snipcart',
       plugin: require('/Users/iliaszales/Documents/GitHub/HiLand/node_modules/gatsby-plugin-snipcart/gatsby-ssr'),
-      options: {"plugins":[],"apiKey":"MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx"},
+      options: {"plugins":[],"apiKey":"MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx","autopop":"false","js":"https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js","styles":"https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"},
     },{
       name: 'gatsby-plugin-manifest',
       plugin: require('/Users/iliaszales/Documents/GitHub/HiLand/node_modules/gatsby-plugin-manifest/gatsby-ssr'),

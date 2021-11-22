@@ -3092,7 +3092,10 @@ var plugins = [{
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-snipcart/gatsby-ssr */ "./node_modules/gatsby-plugin-snipcart/gatsby-ssr.js"),
   options: {
     "plugins": [],
-    "apiKey": "MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx"
+    "apiKey": "MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx",
+    "autopop": "false",
+    "js": "https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js",
+    "styles": "https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"
   }
 }, {
   name: 'gatsby-plugin-manifest',

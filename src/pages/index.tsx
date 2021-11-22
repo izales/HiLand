@@ -37,20 +37,17 @@ const IndexPage = ({
 }: IIndexProps): JSX.Element => {
   return (
     
-    <><Helmet>
-     <link rel="preconnect" href="https://app.snipcart.com" />
-<link rel="preconnect" href="https://cdn.snipcart.com" />
-<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.21/default/snipcart.css" />
-    </Helmet>
+    
       <Layout>
         <Clouds></Clouds>
-        <AddTree Snipcart ></AddTree>
+        <AddTree  ></AddTree>
         <Landscape></Landscape>
         <p>
 
         </p>
+    
+      </Layout>
 
-      </Layout></>
   )
 }
 

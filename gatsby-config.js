@@ -27,8 +27,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-snipcart',
       options: {
-          apiKey: 'MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx'
-          
+          apiKey: 'MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx',
+          autopop: false,
+          js: 'https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js',
+          styles:  'https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css'
       },
   },
     `gatsby-transformer-sharp`,

@@ -28,14 +28,17 @@ const AddTree = ({   }: IState) => {
     console.log('in der cart');
     console.log(Snipcart.api.cart.uniqueId);
   });
-  function removeTree() {
-
-    Snipcart.api.cart.get().items[0].quantity;
+  async function removeTree() {
+    try {
+      await Snipcart.api.cart.items.remove('tree');
+  } catch (error) {
+      console.log(error)
+  }
 
   }
 
 
-  Snipcart.api.items.remove()
+  
 
     
   
@@ -45,24 +48,40 @@ const AddTree = ({   }: IState) => {
   return (
     
       <div className="addTree-main-div">
-
-        <button onClick={removeTree} className="snipcart-remove-item">  remove tree</button>
-
-        <section className=" flex justify-center ">
-
-          <button className=" tree-button text-center snipcart-checkout ">cart</button>
-
-
-        </section>
-
+    
         <button className="snipcart-add-item "
           data-item-id="tree"
           data-item-price="49.99"
           data-item-url="/"
           data-item-description="new tree safe the world"
           data-item-image="../../images/Baum_1.png"
+          data-item-quantity-step="-1"
+
+          data-item-name="Baum">remove Tree</button>
+    <span className="snipcart-items-count"></span>
+    <button className="snipcart-add-item "
+          data-item-id="tree"
+          data-item-price="49.99"
+          data-item-url="/"
+          data-item-description="new tree safe the world"
+          data-item-image="../../images/Baum_1.png"
+          data-item-quantity-step="1"
           data-item-name="Baum">add Tree</button>
 
+
+
+      <div className="counter"> </div>
+     
+
+        <section className=" flex justify-center ">
+        
+          <button className=" tree-button text-center snipcart-checkout "> Preis:
+<span className="snipcart-total-price"></span></button>
+         
+
+        </section>
+
+       
       </div>
   )
 }
