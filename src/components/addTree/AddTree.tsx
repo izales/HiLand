@@ -17,29 +17,28 @@ interface IState {
 
 
 const AddTree = ({   }: IState) => {
- 
-  document.addEventListener('snipcart.ready', () => {
+  const Snipcart = (window as any).Snipcart;
+  document.addEventListener('snipcart.ready', async () => {
     console.log('start');
-    
-    
-  });
-  
-  
-  async function removeTree() {
-    console.log('btn');
-    const secret = "ST_Y2IzNGI3NWMtMzk0Yy00NTVlLWE0MzctZGZkZjViODhjOTNlNjM3NzIwNTc0Mzk2NTgyMDQ2"
+    //new 
+    console.log(Snipcart.api.cart);
 
-    const Snipcart(type: any) = await fetch('https://app.snipcart.com/api/', {
-        headers: {
-            'Authorization': `Basic ${btoa(secret)}`,
-            'Accept': 'application/json'
-        }
-        Snipcart.api.theme.cart.open()
-    })
-    
-    const result = await request.json()
-    console.log(result);
+  });
+  Snipcart.events.on('item.added', () => {
+    console.log('in der cart');
+    console.log(Snipcart.api.cart.uniqueId);
+  });
+  function removeTree() {
+
+    Snipcart.api.cart.get().items[0].quantity;
+
   }
+
+
+  Snipcart.api.items.remove()
+
+    
+  
 
 
 
@@ -47,7 +46,7 @@ const AddTree = ({   }: IState) => {
     
       <div className="addTree-main-div">
 
-        <button onClick={} className="snipcart-remove-item">  remove tree</button>
+        <button onClick={removeTree} className="snipcart-remove-item">  remove tree</button>
 
         <section className=" flex justify-center ">
 
