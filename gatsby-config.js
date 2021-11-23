@@ -2,9 +2,9 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Typescript Tailwind Scss Starter `,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `HiLand `,
+    description: `Pflanze dein Baum`,
+    author: `@IliasZales`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,15 +24,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-snipcart',
-      options: {
-        apiKey: 'MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx',
-        autopop: false,
-        js: 'https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js',
-        styles: 'https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css'
-      },
-    },
+    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,

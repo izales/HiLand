@@ -1,22 +1,22 @@
 var plugins = [{
       name: 'gatsby-plugin-react-helmet',
-      plugin: require('/Users/macpro/Documents/GitHub/HiLand/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/iliaszales/Documents/GitHub/HiLand/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
       name: 'gatsby-plugin-image',
-      plugin: require('/Users/macpro/Documents/GitHub/HiLand/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      plugin: require('/Users/iliaszales/Documents/GitHub/HiLand/node_modules/gatsby-plugin-image/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      name: 'gatsby-plugin-snipcart',
-      plugin: require('/Users/macpro/Documents/GitHub/HiLand/node_modules/gatsby-plugin-snipcart/gatsby-ssr'),
-      options: {"plugins":[],"apiKey":"MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx","autopop":false,"js":"https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js","styles":"https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"},
-    },{
       name: 'gatsby-plugin-manifest',
-      plugin: require('/Users/macpro/Documents/GitHub/HiLand/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/iliaszales/Documents/GitHub/HiLand/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-typescript-tailwind-scss-starter","short_name":"GTTSS","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"4a9773549091c227cd2eb82ccd9c5e3a"},
     },{
       name: 'gatsby-plugin-gatsby-cloud',
-      plugin: require('/Users/macpro/Documents/GitHub/HiLand/node_modules/gatsby-plugin-gatsby-cloud/gatsby-ssr'),
+      plugin: require('/Users/iliaszales/Documents/GitHub/HiLand/node_modules/gatsby-plugin-gatsby-cloud/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      name: 'default-site-plugin',
+      plugin: require('/Users/iliaszales/Documents/GitHub/HiLand/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 /* global plugins */

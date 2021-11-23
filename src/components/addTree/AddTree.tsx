@@ -21,25 +21,10 @@ const AddTree = ({ }: IState) => {
 
   document.addEventListener('snipcart.ready', async () => {
     console.log('start');
-    Snipcart.api.configure('show_cart_automatically', false);
 
-    //new 
-    console.log('show');
-    console.log(Snipcart.api.cart);
+
 
   });
-  Snipcart.events.on('item.added', () => {
-    console.log('in der cart');
-    console.log(Snipcart.api.cart.uniqueId);
-  });
-  async function removeTree() {
-    try {
-      await Snipcart.api.cart.items.remove('tree');
-    } catch (error) {
-      console.log(error)
-    }
-
-  }
 
 
 

@@ -42,10 +42,10 @@ module.exports = {
 
       },
       margin: {
-        'xs': '2rem',
-        's': '4rem',
-        'm': '6rem',
-        'l': '8rem'
+        'xs': '1rem',
+        's': '2rem',
+        'm': '4rem',
+        'l': '6rem'
       },
       top: {
         'wiese': '32rem',

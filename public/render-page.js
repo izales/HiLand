@@ -3088,16 +3088,6 @@ var plugins = [{
     "plugins": []
   }
 }, {
-  name: 'gatsby-plugin-snipcart',
-  plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-snipcart/gatsby-ssr */ "./node_modules/gatsby-plugin-snipcart/gatsby-ssr.js"),
-  options: {
-    "plugins": [],
-    "apiKey": "MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx",
-    "autopop": false,
-    "js": "https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js",
-    "styles": "https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"
-  }
-}, {
   name: 'gatsby-plugin-manifest',
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-manifest/gatsby-ssr */ "./node_modules/gatsby-plugin-manifest/gatsby-ssr.js"),
   options: {
@@ -3119,6 +3109,12 @@ var plugins = [{
 }, {
   name: 'gatsby-plugin-gatsby-cloud',
   plugin: __webpack_require__(/*! ./node_modules/gatsby-plugin-gatsby-cloud/gatsby-ssr */ "./node_modules/gatsby-plugin-gatsby-cloud/gatsby-ssr.js"),
+  options: {
+    "plugins": []
+  }
+}, {
+  name: 'default-site-plugin',
+  plugin: __webpack_require__(/*! ./gatsby-ssr */ "./gatsby-ssr.js"),
   options: {
     "plugins": []
   }
@@ -4570,6 +4566,36 @@ function stripPrefix(str, prefix = ``) {
 
 /***/ }),
 
+/***/ "./gatsby-ssr.js":
+/*!***********************!*\
+  !*** ./gatsby-ssr.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+const React = __webpack_require__(/*! react */ "react");
+
+exports.onRenderBody = ({
+  setHeadComponents,
+  setPreBodyComponents,
+  setPostBodyComponents
+}) => {
+  setHeadComponents([/*#__PURE__*/React.createElement("link", {
+    rel: "stylesheet",
+    href: "https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css"
+  })]);
+  setPostBodyComponents([/*#__PURE__*/React.createElement("div", {
+    id: "snipcart",
+    "data-api-key": "MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx",
+    "data-config-add-product-behavior": "none",
+    hidden: true
+  }), /*#__PURE__*/React.createElement("script", {
+    async: true,
+    src: "https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"
+  })]);
+};
+
+/***/ }),
+
 /***/ "./node_modules/gatsby-plugin-gatsby-cloud/gatsby-browser.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/gatsby-plugin-gatsby-cloud/gatsby-browser.js ***!
@@ -4998,85 +5024,6 @@ var onRenderBody = function onRenderBody(_ref) {
 };
 
 exports.onRenderBody = onRenderBody;
-
-/***/ }),
-
-/***/ "./node_modules/gatsby-plugin-snipcart/gatsby-ssr.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/gatsby-plugin-snipcart/gatsby-ssr.js ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-var _react = __webpack_require__(/*! react */ "react");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    default: obj
-  };
-}
-
-var warning = false;
-var linkToLangFile = null;
-
-exports.onRenderBody = function (_ref) {
-  var setPostBodyComponents = _ref.setPostBodyComponents;
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  options = Object.assign({
-    apiKey: ({}).GATSBY_SNIPCART_API_KEY,
-    autopop: false,
-    js: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
-    jquery: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
-    styles: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
-    language: '' + linkToLangFile
-  }, options);
-
-  if (!options.apiKey) {
-    if (!warning) {
-      warning = true;
-      console.log('No Snipcart API key found');
-    }
-
-    return;
-  }
-
-  var components = [_react2.default.createElement('script', {
-    key: 'snipcartJs',
-    src: options.js,
-    id: 'snipcart',
-    'data-api-key': options.apiKey,
-    'data-autopop': options.autopop
-  })];
-
-  if (options.jquery) {
-    components.unshift(_react2.default.createElement('script', {
-      key: 'snipcartJquery',
-      src: options.jquery
-    }));
-  }
-
-  if (options.styles) {
-    components.push(_react2.default.createElement('link', {
-      key: 'snipcartStyle',
-      href: options.styles,
-      type: 'text/css',
-      rel: 'stylesheet'
-    }));
-  }
-
-  if (options.language) {
-    components.push(_react2.default.createElement('script', {
-      key: 'snipcartLanguage',
-      src: options.language
-    }));
-  }
-
-  return setPostBodyComponents(components);
-};
 
 /***/ }),
 
@@ -38911,24 +38858,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!*****************************************************************************************!*\
-  !*** external "/Users/macpro/Documents/GitHub/HiLand/node_modules/react-dom/server.js" ***!
-  \*****************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** external "/Users/iliaszales/Documents/GitHub/HiLand/node_modules/react-dom/server.js" ***!
+  \*********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/macpro/Documents/GitHub/HiLand/node_modules/react-dom/server.js");
+module.exports = require("/Users/iliaszales/Documents/GitHub/HiLand/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!************************************************************************************!*\
-  !*** external "/Users/macpro/Documents/GitHub/HiLand/node_modules/react/index.js" ***!
-  \************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** external "/Users/iliaszales/Documents/GitHub/HiLand/node_modules/react/index.js" ***!
+  \****************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/macpro/Documents/GitHub/HiLand/node_modules/react/index.js");
+module.exports = require("/Users/iliaszales/Documents/GitHub/HiLand/node_modules/react/index.js");
 
 /***/ }),
 
