@@ -1,9 +1,8 @@
-import React, { ReactNode, useEffect } from "react"
+import React, { createContext, ReactNode, useEffect } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Img from "gatsby-image"
 import "./AddTree.scss"
-import axios from 'axios'
-
+import { useSpring, animated } from 'react-spring'
 
 interface IState {
 
@@ -17,21 +16,9 @@ interface IState {
 
 
 const AddTree = ({ }: IState) => {
-  const Snipcart = (window as any).Snipcart;
-
-  document.addEventListener('snipcart.ready', async () => {
-    console.log('start');
 
 
-
-  });
-
-
-
-
-
-
-
+  const props = useSpring({ to: { y: 100 }, from: { y: 0 }, delay: 400 })
 
 
   return (
@@ -90,6 +77,15 @@ const AddTree = ({ }: IState) => {
 
       </section>
 
+      <animated.div style={props}><StaticImage
+        src="../../images/Baum_1.png"
+        width={50}
+        quality={95}
+
+        alt="plus"
+
+        className="ml-32 "
+      ></StaticImage> </animated.div>
 
     </div>
   )
