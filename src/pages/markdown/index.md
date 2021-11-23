@@ -1,7 +1,7 @@
 ---
 pageKey: page_index
-seoTitle: Default - Frontpage
-seoDescription: This is the default Frontpage for Gatsby
+seoTitle: HiLand - Pflanze ein Baum
+seoDescription: Helfe deiner Region, Pflanze ein Baum
 ---
 
 ## ABOUT Frontpage
