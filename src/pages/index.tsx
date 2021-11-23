@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import Layout from "../components/layout/Layout"
 import Seo from "../components/seo/Seo"
 import Clouds from "@components/clouds/Clouds"
@@ -36,17 +36,17 @@ const IndexPage = ({
   },
 }: IIndexProps): JSX.Element => {
   return (
-    
-    
-      <Layout>
-        <Clouds></Clouds>
-        <AddTree  ></AddTree>
-        <Landscape></Landscape>
-        <p>
 
-        </p>
-    
-      </Layout>
+
+    <Layout>
+      <Clouds />
+      <AddTree />
+      <Landscape />
+      <p>
+
+      </p>
+
+    </Layout>
 
   )
 }

@@ -9,10 +9,10 @@ interface ILayoutProps {
 
 const Layout = ({ children }: ILayoutProps): JSX.Element => {
   return (
-     <div className="mb-cloud  w-screen h-screen ">  
-  <div>{children}</div>
- <Footer/>
-  </div>
+    <div className="mb-cloud  w-screen h-screen ">
+      <div>{children}</div>
+      <Footer />
+    </div>
   )
 }
 

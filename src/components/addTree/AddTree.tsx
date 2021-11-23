@@ -18,9 +18,13 @@ interface IState {
 
 const AddTree = ({ }: IState) => {
   const Snipcart = (window as any).Snipcart;
+
   document.addEventListener('snipcart.ready', async () => {
     console.log('start');
+    Snipcart.api.configure('show_cart_automatically', false);
+
     //new 
+    console.log('show');
     console.log(Snipcart.api.cart);
 
   });
@@ -48,7 +52,8 @@ const AddTree = ({ }: IState) => {
   return (
 
     <div className="addTree-main-div">
-
+      <div className="flex justify-center mb-s text-4xl text-blue-dunkel "> Spende jetzt für
+        deine Region!</div>
       <div className="flex justify-center mb-s">
         <button className="snipcart-add-item "
           data-item-id="tree"
@@ -94,8 +99,8 @@ const AddTree = ({ }: IState) => {
 
       <section className=" flex justify-center ">
 
-        <button className=" tree-button text-center snipcart-checkout "> Preis:
-          <span className="snipcart-total-price"></span></button>
+        <button className=" tree-button text-center snipcart-checkout text-lg ">
+          Für  <span className="snipcart-total-price text-lg"></span> Bäume pflanzen</button>
 
 
       </section>

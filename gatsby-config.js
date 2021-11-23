@@ -27,12 +27,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-snipcart',
       options: {
-          apiKey: 'MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx',
-          autopop: false,
-          js: 'https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js',
-          styles:  'https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css'
+        apiKey: 'MmI3MjMyNzItZWVhNi00NTJlLTg4ODMtZmZkNTJmZTczMmQ4NjM3NzEwMjQ1MTk3ODA3Mjgx',
+        autopop: false,
+        js: 'https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js',
+        styles: 'https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.css'
       },
-  },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
@@ -76,20 +76,20 @@ module.exports = {
         },
       },
     },
-    
-    
-      {
-        resolve: "gatsby-plugin-react-svg",
-        options: {
-          rule: {
-            include: /assets/ // See below to configure properly
-          },
+
+
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
         },
       },
-    
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-  
+
 }
