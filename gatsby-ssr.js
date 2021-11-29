@@ -6,7 +6,7 @@ exports.onRenderBody = ({ setHeadComponents, setPreBodyComponents, setPostBodyCo
       
     </div>,
      
-   <script async src="https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"> 
+   <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"> 
  
    </script>, 
   ])
