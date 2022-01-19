@@ -4590,7 +4590,7 @@ exports.onRenderBody = ({
     hidden: true
   }), /*#__PURE__*/React.createElement("script", {
     async: true,
-    src: "https://cdn.snipcart.com/themes/v3.2.2/default/snipcart.js"
+    src: "https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"
   })]);
 };
 
