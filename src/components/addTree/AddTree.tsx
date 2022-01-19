@@ -89,15 +89,6 @@ const AddTree = ({ cartSize }: IState) => {
 
       </section>
 
-      <animated.div style={props}><StaticImage
-        src="../../images/Baum_1.png"
-        width={50}
-        quality={95}
-
-        alt="plus"
-
-        className="ml-32 "
-      ></StaticImage> </animated.div>
 
     </div>
   )
