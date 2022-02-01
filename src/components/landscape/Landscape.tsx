@@ -23,7 +23,7 @@ const Landscape = (): JSX.Element => {
     const path2 = `../../images/Baum_${ziffer}.png`
     console.log(path2)
     return <StaticImage
-      src={`../../images/Baum_${ziffer}.png`}
+      src="../../images/Baum_2.png"
       width={50}
       quality={95}
 
