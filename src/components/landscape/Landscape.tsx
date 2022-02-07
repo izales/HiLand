@@ -7,7 +7,10 @@ import Land from "../../assets/wiese.svg"
 import Baum1 from "../../images/Baum_1.png"
 import Baum2 from "../../images/Baum_2.png"
 import { useSpring, animated } from 'react-spring'
-const Landscape = (): JSX.Element => {
+import { graphql } from "gatsby"
+import Image from "../helpers/Image"
+
+const Landscape = ({ data }: { data: any }): JSX.Element => {
 
 
   const props = useSpring({ to: { y: 100 }, from: { y: 0 }, delay: 400 })
@@ -20,17 +23,10 @@ const Landscape = (): JSX.Element => {
   const images = ["../../images/Baum_1.png", "../../images/Baum_2.png", "../../images/Baum_3.png"];
   const RandomImage = () => {
 
-    const path2 = `../../images/Baum_${ziffer}.png`
-    console.log(path2)
-    return <StaticImage
-      src="../../images/Baum_2.png"
-      width={50}
-      quality={95}
+    const path2 = `../../images/Baum_${ziffer}.png`;
+    console.log(path2);
+    return null
 
-      alt="plus"
-
-      className="ml-32 "
-    ></StaticImage>;
   }
 
 
@@ -84,7 +80,12 @@ const Landscape = (): JSX.Element => {
         alt="plus"
 
         className="ml-32 "
-      ></StaticImage> </animated.div>
+      ></StaticImage>
+      </animated.div>
+
+      <Image
+        altText='Monster P. Whittington portrait'
+        title='Monster P. Whittington' url="Baum_3.png" />
       <StaticImage
         src="../../images/landscape.png"
         width={2400}
@@ -99,3 +100,4 @@ const Landscape = (): JSX.Element => {
 }
 
 export default Landscape
+
