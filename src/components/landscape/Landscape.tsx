@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react"
+import React, { ReactNode, useState } from "react"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import "./Landscape.d.ts"
 //import Img from "gatsby-image"
@@ -19,17 +19,15 @@ const Landscape = ({ data }: { data: any }): JSX.Element => {
   const min = 1;
   const ziffer = Math.floor(Math.random() * (max - min + 1)) + min;
 
+  const [randomNumber, setRandomNumber] = useState(0);
 
-  const images = ["../../images/Baum_1.png", "../../images/Baum_2.png", "../../images/Baum_3.png"];
-  const RandomImage = () => {
-
-    const path2 = `../../images/Baum_${ziffer}.png`;
-    console.log(path2);
-    return null
-
+  const images = ["Baum_1.png", "Baum_2.png", "Baum_3.png"];
+  const generateRandomNumber = () => {
+    const randomNumber = Math.floor(Math.random() * images.length);
+    setRandomNumber(randomNumber)
   }
 
-
+  var randomBaum = images[Math.floor(Math.random() * images.length)];
 
   return (
     /**   
@@ -71,7 +69,9 @@ const Landscape = ({ data }: { data: any }): JSX.Element => {
 </div>*/
     <div className="absolute bottom-0 w-full ">
 
-      <animated.div className="z-20 relative" style={props}><RandomImage></RandomImage></animated.div>
+      <animated.div className="z-20 relative" style={props}> <Image imageName={randomBaum} maxWidth={80} className=""
+
+      /></animated.div>
       <animated.div className="z-20 relative" style={props}><StaticImage
         src="../../images/Baum_1.png"
         width={50}
@@ -83,9 +83,11 @@ const Landscape = ({ data }: { data: any }): JSX.Element => {
       ></StaticImage>
       </animated.div>
 
-      <Image
-        altText='Monster P. Whittington portrait'
-        title='Monster P. Whittington' url="Baum_3.png" />
+      <Image imageName={randomBaum} maxWidth={80} className=""
+
+      />
+
+
       <StaticImage
         src="../../images/landscape.png"
         width={2400}
