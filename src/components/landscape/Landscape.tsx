@@ -69,23 +69,7 @@ const Landscape = ({ data }: { data: any }): JSX.Element => {
 </div>*/
     <div className="absolute bottom-0 w-full ">
 
-      <animated.div className="z-20 relative" style={props}> <Image imageName={randomBaum} maxWidth={80} className=""
 
-      /></animated.div>
-      <animated.div className="z-20 relative" style={props}><StaticImage
-        src="../../images/Baum_1.png"
-        width={50}
-        quality={95}
-
-        alt="plus"
-
-        className="ml-32 "
-      ></StaticImage>
-      </animated.div>
-
-      <Image imageName={randomBaum} maxWidth={80} className=""
-
-      />
 
 
       <StaticImage

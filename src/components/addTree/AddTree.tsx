@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import "./AddTree.scss"
 import { useSpring, animated } from 'react-spring'
 
+import Image from "../helpers/Image"
 interface IState {
   cartSize?: any
 
@@ -30,7 +31,34 @@ const AddTree = ({ cartSize }: IState) => {
 
 
   });
+  //const props = useSpring({ to: { y: 100 }, from: { y: 0 }, delay: 4005 })
+  const [ArrayBaum, setArrayBaum] = useState([]);
 
+  const addBaumfkt(id: string) => {
+    images.map((images) => (
+    
+    ))
+
+  }
+
+  useEffect(() => {
+
+
+  }, [])
+
+  const max = 3;
+  const min = 1;
+  const ziffer = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  const [randomNumber, setRandomNumber] = useState(0);
+
+  const images = ["Baum_1.png", "Baum_2.png", "Baum_3.png"];
+  const generateRandomNumber = () => {
+    const randomNumber = Math.floor(Math.random() * images.length);
+    setRandomNumber(randomNumber)
+  }
+
+  var randomBaum = images[Math.floor(Math.random() * images.length)];
   return (
 
     <div className="addTree-main-div">
@@ -58,7 +86,7 @@ const AddTree = ({ cartSize }: IState) => {
           ></StaticImage></button>
 
         <span className="snipcart-items-count text-64 text-blue-dunkel"></span>
-        <button className="snipcart-add-item "
+        <button onClick={() => addBaumfkt()} className="snipcart-add-item "
           data-item-id="tree"
           data-item-price="49.99"
           data-item-url="/"
@@ -89,6 +117,15 @@ const AddTree = ({ cartSize }: IState) => {
 
       </section>
 
+      <div className="w-full ">
+        <animated.div className="" style={props}>
+          {images.map((images) => (
+            <Image imageName={images} maxWidth={80} className="" />
+          ))}
+
+        </animated.div>
+
+      </div>
 
     </div>
   )
