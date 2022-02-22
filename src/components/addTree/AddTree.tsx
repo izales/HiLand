@@ -34,12 +34,11 @@ const AddTree = ({ cartSize }: IState) => {
   //const props = useSpring({ to: { y: 100 }, from: { y: 0 }, delay: 4005 })
   const [ArrayBaum, setArrayBaum] = useState([]);
 
-  const addBaumfkt(id: string) => {
+  /** const addBaumfkt = (id: string) => {
     images.map((images) => (
     
-    ))
 
-  }
+  }*/
 
   useEffect(() => {
 
