@@ -25,12 +25,9 @@ const AddTree = ({ cartSize }: IState) => {
 
 
   const props = useSpring({ to: { y: 100 }, from: { y: 0 }, delay: 4000 })
-  document.addEventListener('snipcart.ready', () => {
-    const initialState = Snip.store.getState();
-    setItemsCount(initialState.cart.items.count);
 
 
-  });
+
   //const props = useSpring({ to: { y: 100 }, from: { y: 0 }, delay: 4005 })
   const [ArrayBaum, setArrayBaum] = useState([]);
 
@@ -41,7 +38,12 @@ const AddTree = ({ cartSize }: IState) => {
   }*/
 
   useEffect(() => {
+    document.addEventListener('snipcart.ready', () => {
+      const initialState = Snip.store.getState();
+      setItemsCount(initialState.cart.items.count);
 
+
+    });
 
   }, [])
 
