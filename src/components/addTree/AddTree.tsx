@@ -20,7 +20,7 @@ interface IState {
 //export const useSnipcartContext = () => useContext(SnipcartContext);
 const AddTree = ({ cartSize }: IState) => {
   var state: any;
-  const Snip = (window as any).Snipcart;
+  // dconst Snip = (window as any).Snipcart;
   //cartSize = Snipcart.store.getState().cart.items.items.length;
 
 
@@ -37,15 +37,7 @@ const AddTree = ({ cartSize }: IState) => {
 
   }*/
 
-  useEffect(() => {
-    document.addEventListener('snipcart.ready', () => {
-      const initialState = Snip.store.getState();
-      setItemsCount(initialState.cart.items.count);
 
-
-    });
-
-  }, [])
 
   const max = 3;
   const min = 1;
